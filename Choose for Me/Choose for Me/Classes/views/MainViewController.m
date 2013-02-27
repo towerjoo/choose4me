@@ -31,18 +31,18 @@
 // MARK: table delegates
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return MIN(7, [data count]);
+    return MIN(5, [data count]);
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSString *reusableID = @"tableID";
+    NSString *reusableID = @"tableIDHistory";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reusableID];
     NSDictionary *item = [data objectAtIndex:indexPath.row];
     if (cell == nil){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reusableID];
-        cell.textLabel.text = [item objectForKey:@"name"];
-        cell.detailTextLabel.text = [[item objectForKey:@"time"] description];
     }
+    cell.textLabel.text = [item objectForKey:@"name"];
+    cell.detailTextLabel.text = [[item objectForKey:@"time"] description];
     return cell;
 }
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView{
@@ -53,7 +53,7 @@
     NSDictionary *choice = [[StorageManager sharedManager] getRandomChoice];
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:choice];
     NSDate *now = [NSDate date];
-    [dict setObject:now forKey:@"date"];
+    [dict setObject:now forKey:@"time"];
     [[HistoryManager sharedManager] updateData:dict];
     NSString *result = [NSString stringWithFormat:@"We choose %@ for you at %@. Enjoy your meal!",
                         [choice objectForKey:@"name"], [choice objectForKey:@"place"]];

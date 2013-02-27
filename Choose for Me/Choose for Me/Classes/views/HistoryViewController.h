@@ -11,7 +11,9 @@
 @interface HistoryViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 {
     NSMutableArray *data;
+    UITableView *table;
 }
+@property (nonatomic, retain) IBOutlet UITableView *table;
 @property (nonatomic, retain) NSMutableArray *data;
 
 @end

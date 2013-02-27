@@ -41,9 +41,9 @@
     NSDictionary *item = [data objectAtIndex:indexPath.row];
     if (cell == nil){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reusableID];
-        cell.textLabel.text = [item objectForKey:@"name"];
-        cell.detailTextLabel.text = [item objectForKey:@"place"];
     }
+    cell.textLabel.text = [item objectForKey:@"name"];
+    cell.detailTextLabel.text = [item objectForKey:@"place"];
     return cell;
 }
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView{

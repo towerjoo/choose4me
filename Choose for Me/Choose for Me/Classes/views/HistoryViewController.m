@@ -14,13 +14,19 @@
 @end
 
 @implementation HistoryViewController
-@synthesize data;
+@synthesize data, table;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     data = [HistoryManager sharedManager].data;
+}
+
+-(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    data = [HistoryManager sharedManager].data;
+    [table reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,9 +47,9 @@
     NSDictionary *item = [data objectAtIndex:indexPath.row];
     if (cell == nil){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reusableID];
-        cell.textLabel.text = [item objectForKey:@"name"];
-        cell.detailTextLabel.text = [[item objectForKey:@"time"] description];
     }
+    cell.textLabel.text = [item objectForKey:@"name"];
+    cell.detailTextLabel.text = [[item objectForKey:@"time"] description];
     return cell;
 }
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView{

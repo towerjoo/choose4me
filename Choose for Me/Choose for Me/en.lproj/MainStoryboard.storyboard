@@ -49,6 +49,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="featured" id="7"/>
+                    <connections>
+                        <outlet property="table" destination="26f-2C-xyB" id="HBa-jP-33x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,6 +82,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="history" id="6"/>
+                    <connections>
+                        <outlet property="table" destination="IWh-op-Q2A" id="qWO-Fs-d7g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
             </objects>
