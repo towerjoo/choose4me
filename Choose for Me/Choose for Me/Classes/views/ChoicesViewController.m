@@ -1,18 +1,19 @@
 //
-//  SettingsViewController.m
+//  ChoicesViewController.m
 //  Choose for Me
 //
 //  Created by Zhu Tao on 2/27/13.
 //  Copyright (c) 2013 Zhu Tao. All rights reserved.
 //
 
-#import "SettingsViewController.h"
+#import "ChoicesViewController.h"
 
-@interface SettingsViewController ()
+@interface ChoicesViewController ()
 
 @end
 
-@implementation SettingsViewController
+@implementation ChoicesViewController
+
 
 - (void)viewDidLoad
 {
@@ -25,5 +26,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end

@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7862AE7A16DDA8960000E056 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7862AE7916DDA8960000E056 /* SettingsViewController.m */; };
+		7862AE7A16DDA8960000E056 /* ChoicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7862AE7916DDA8960000E056 /* ChoicesViewController.m */; };
+		7862AE8516DDAF090000E056 /* StorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7862AE8416DDAF090000E056 /* StorageManager.m */; };
+		7862AE8716DDB03F0000E056 /* choices.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7862AE8616DDB03F0000E056 /* choices.plist */; };
+		7862AE8916DDB08D0000E056 /* history.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7862AE8816DDB08D0000E056 /* history.plist */; };
+		7862AE8C16DDDAB20000E056 /* AddChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7862AE8B16DDDAB20000E056 /* AddChoiceViewController.m */; };
+		7862AE8F16DDDADA0000E056 /* ListChoicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7862AE8E16DDDADA0000E056 /* ListChoicesViewController.m */; };
+		7862AE9216DDE7660000E056 /* HistoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7862AE9116DDE7660000E056 /* HistoryManager.m */; };
 		78787EAF16DDA60F00507448 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78787EAE16DDA60F00507448 /* UIKit.framework */; };
 		78787EB116DDA60F00507448 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78787EB016DDA60F00507448 /* Foundation.framework */; };
 		78787EB316DDA60F00507448 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78787EB216DDA60F00507448 /* CoreGraphics.framework */; };
@@ -24,14 +30,21 @@
 		78787EEA16DDA6F700507448 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78787EE616DDA6F700507448 /* first@2x.png */; };
 		78787EEB16DDA6F700507448 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 78787EE716DDA6F700507448 /* second.png */; };
 		78787EEC16DDA6F700507448 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78787EE816DDA6F700507448 /* second@2x.png */; };
-		78787EF016DDA70200507448 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78787EED16DDA70200507448 /* Default-568h@2x.png */; };
-		78787EF116DDA70200507448 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 78787EEE16DDA70200507448 /* Default.png */; };
-		78787EF216DDA70200507448 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78787EEF16DDA70200507448 /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7862AE7816DDA8960000E056 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = Classes/views/SettingsViewController.h; sourceTree = "<group>"; };
-		7862AE7916DDA8960000E056 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = Classes/views/SettingsViewController.m; sourceTree = "<group>"; };
+		7862AE7816DDA8960000E056 /* ChoicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChoicesViewController.h; path = Classes/views/ChoicesViewController.h; sourceTree = "<group>"; };
+		7862AE7916DDA8960000E056 /* ChoicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChoicesViewController.m; path = Classes/views/ChoicesViewController.m; sourceTree = "<group>"; };
+		7862AE8316DDAF090000E056 /* StorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StorageManager.h; path = Classes/managers/StorageManager.h; sourceTree = "<group>"; };
+		7862AE8416DDAF090000E056 /* StorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StorageManager.m; path = Classes/managers/StorageManager.m; sourceTree = "<group>"; };
+		7862AE8616DDB03F0000E056 /* choices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = choices.plist; sourceTree = "<group>"; };
+		7862AE8816DDB08D0000E056 /* history.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = history.plist; sourceTree = "<group>"; };
+		7862AE8A16DDDAB20000E056 /* AddChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddChoiceViewController.h; path = Classes/views/AddChoiceViewController.h; sourceTree = "<group>"; };
+		7862AE8B16DDDAB20000E056 /* AddChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddChoiceViewController.m; path = Classes/views/AddChoiceViewController.m; sourceTree = "<group>"; };
+		7862AE8D16DDDAD90000E056 /* ListChoicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListChoicesViewController.h; path = Classes/views/ListChoicesViewController.h; sourceTree = "<group>"; };
+		7862AE8E16DDDADA0000E056 /* ListChoicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListChoicesViewController.m; path = Classes/views/ListChoicesViewController.m; sourceTree = "<group>"; };
+		7862AE9016DDE7660000E056 /* HistoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryManager.h; path = Classes/managers/HistoryManager.h; sourceTree = "<group>"; };
+		7862AE9116DDE7660000E056 /* HistoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryManager.m; path = Classes/managers/HistoryManager.m; sourceTree = "<group>"; };
 		78787EAA16DDA60F00507448 /* Choose for Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Choose for Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78787EAE16DDA60F00507448 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		78787EB016DDA60F00507448 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -54,9 +67,6 @@
 		78787EE616DDA6F700507448 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "first@2x.png"; path = "Resources/images/first@2x.png"; sourceTree = "<group>"; };
 		78787EE716DDA6F700507448 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = second.png; path = Resources/images/second.png; sourceTree = "<group>"; };
 		78787EE816DDA6F700507448 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "second@2x.png"; path = "Resources/images/second@2x.png"; sourceTree = "<group>"; };
-		78787EED16DDA70200507448 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		78787EEE16DDA70200507448 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		78787EEF16DDA70200507448 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7862AE7B16DDAD4E0000E056 /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				7862AE9016DDE7660000E056 /* HistoryManager.h */,
+				7862AE9116DDE7660000E056 /* HistoryManager.m */,
+				7862AE8316DDAF090000E056 /* StorageManager.h */,
+				7862AE8416DDAF090000E056 /* StorageManager.m */,
+			);
+			name = managers;
+			sourceTree = "<group>";
+		};
 		78787E9F16DDA60F00507448 = {
 			isa = PBXGroup;
 			children = (
@@ -103,9 +124,6 @@
 		78787EB416DDA60F00507448 /* Choose for Me */ = {
 			isa = PBXGroup;
 			children = (
-				78787EED16DDA70200507448 /* Default-568h@2x.png */,
-				78787EEE16DDA70200507448 /* Default.png */,
-				78787EEF16DDA70200507448 /* Default@2x.png */,
 				78787EDD16DDA68E00507448 /* Resources */,
 				78787EDC16DDA68600507448 /* Classes */,
 				78787EBD16DDA60F00507448 /* AppDelegate.h */,
@@ -126,6 +144,8 @@
 				78787EC016DDA60F00507448 /* Default.png */,
 				78787EC216DDA60F00507448 /* Default@2x.png */,
 				78787EC416DDA60F00507448 /* Default-568h@2x.png */,
+				7862AE8816DDB08D0000E056 /* history.plist */,
+				7862AE8616DDB03F0000E056 /* choices.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -133,6 +153,7 @@
 		78787EDC16DDA68600507448 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7862AE7B16DDAD4E0000E056 /* managers */,
 				78787EE416DDA6A600507448 /* views */,
 			);
 			name = Classes;
@@ -149,8 +170,12 @@
 		78787EE416DDA6A600507448 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				7862AE7816DDA8960000E056 /* SettingsViewController.h */,
-				7862AE7916DDA8960000E056 /* SettingsViewController.m */,
+				7862AE8D16DDDAD90000E056 /* ListChoicesViewController.h */,
+				7862AE8E16DDDADA0000E056 /* ListChoicesViewController.m */,
+				7862AE8A16DDDAB20000E056 /* AddChoiceViewController.h */,
+				7862AE8B16DDDAB20000E056 /* AddChoiceViewController.m */,
+				7862AE7816DDA8960000E056 /* ChoicesViewController.h */,
+				7862AE7916DDA8960000E056 /* ChoicesViewController.m */,
 				78787EDE16DDA69F00507448 /* MainViewController.h */,
 				78787EDF16DDA69F00507448 /* MainViewController.m */,
 				78787EE016DDA69F00507448 /* HistoryViewController.h */,
@@ -230,9 +255,8 @@
 				78787EEA16DDA6F700507448 /* first@2x.png in Resources */,
 				78787EEB16DDA6F700507448 /* second.png in Resources */,
 				78787EEC16DDA6F700507448 /* second@2x.png in Resources */,
-				78787EF016DDA70200507448 /* Default-568h@2x.png in Resources */,
-				78787EF116DDA70200507448 /* Default.png in Resources */,
-				78787EF216DDA70200507448 /* Default@2x.png in Resources */,
+				7862AE8716DDB03F0000E056 /* choices.plist in Resources */,
+				7862AE8916DDB08D0000E056 /* history.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +271,11 @@
 				78787EBF16DDA60F00507448 /* AppDelegate.m in Sources */,
 				78787EE216DDA69F00507448 /* MainViewController.m in Sources */,
 				78787EE316DDA69F00507448 /* HistoryViewController.m in Sources */,
-				7862AE7A16DDA8960000E056 /* SettingsViewController.m in Sources */,
+				7862AE7A16DDA8960000E056 /* ChoicesViewController.m in Sources */,
+				7862AE8516DDAF090000E056 /* StorageManager.m in Sources */,
+				7862AE8C16DDDAB20000E056 /* AddChoiceViewController.m in Sources */,
+				7862AE8F16DDDADA0000E056 /* ListChoicesViewController.m in Sources */,
+				7862AE9216DDE7660000E056 /* HistoryManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +357,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Choose for Me/Choose for Me-Prefix.pch";
 				INFOPLIST_FILE = "Choose for Me/Choose for Me-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -340,6 +369,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Choose for Me/Choose for Me-Prefix.pch";
 				INFOPLIST_FILE = "Choose for Me/Choose for Me-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

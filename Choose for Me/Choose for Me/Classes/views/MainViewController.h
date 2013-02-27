@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate>
+{
+    NSMutableArray *data;
+    UITableView *table;
+}
+@property (nonatomic, retain) IBOutlet UITableView *table;
+@property (nonatomic, retain) NSMutableArray *data;
 
+-(IBAction)onChoose4Me:(id)sender;
 @end

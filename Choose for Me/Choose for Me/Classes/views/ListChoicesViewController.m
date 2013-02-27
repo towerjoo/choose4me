@@ -1,26 +1,26 @@
 //
-//  HistoryViewController.m
+//  ListChoicesViewController.m
 //  Choose for Me
 //
 //  Created by Zhu Tao on 2/27/13.
 //  Copyright (c) 2013 Zhu Tao. All rights reserved.
 //
 
-#import "HistoryViewController.h"
-#import "HistoryManager.h"
-
-@interface HistoryViewController ()
+#import "ListChoicesViewController.h"
+#import "StorageManager.h"
+@interface ListChoicesViewController ()
 
 @end
 
-@implementation HistoryViewController
+@implementation ListChoicesViewController
 @synthesize data;
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    data = [HistoryManager sharedManager].data;
+    data = [StorageManager sharedManager].data;
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,13 +42,12 @@
     if (cell == nil){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reusableID];
         cell.textLabel.text = [item objectForKey:@"name"];
-        cell.detailTextLabel.text = [[item objectForKey:@"time"] description];
+        cell.detailTextLabel.text = [item objectForKey:@"place"];
     }
     return cell;
 }
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
-
 
 @end

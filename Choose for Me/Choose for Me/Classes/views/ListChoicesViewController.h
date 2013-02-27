@@ -1,5 +1,5 @@
 //
-//  HistoryViewController.h
+//  ListChoicesViewController.h
 //  Choose for Me
 //
 //  Created by Zhu Tao on 2/27/13.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HistoryViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@interface ListChoicesViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 {
     NSMutableArray *data;
 }
