@@ -14,6 +14,7 @@
 		7862AE8C16DDDAB20000E056 /* AddChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7862AE8B16DDDAB20000E056 /* AddChoiceViewController.m */; };
 		7862AE8F16DDDADA0000E056 /* ListChoicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7862AE8E16DDDADA0000E056 /* ListChoicesViewController.m */; };
 		7862AE9216DDE7660000E056 /* HistoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7862AE9116DDE7660000E056 /* HistoryManager.m */; };
+		7862AEA216DDF83E0000E056 /* SyncDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7862AEA116DDF83D0000E056 /* SyncDataViewController.m */; };
 		78787EAF16DDA60F00507448 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78787EAE16DDA60F00507448 /* UIKit.framework */; };
 		78787EB116DDA60F00507448 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78787EB016DDA60F00507448 /* Foundation.framework */; };
 		78787EB316DDA60F00507448 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78787EB216DDA60F00507448 /* CoreGraphics.framework */; };
@@ -45,6 +46,8 @@
 		7862AE8E16DDDADA0000E056 /* ListChoicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListChoicesViewController.m; path = Classes/views/ListChoicesViewController.m; sourceTree = "<group>"; };
 		7862AE9016DDE7660000E056 /* HistoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryManager.h; path = Classes/managers/HistoryManager.h; sourceTree = "<group>"; };
 		7862AE9116DDE7660000E056 /* HistoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryManager.m; path = Classes/managers/HistoryManager.m; sourceTree = "<group>"; };
+		7862AEA116DDF83D0000E056 /* SyncDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SyncDataViewController.m; path = Classes/views/SyncDataViewController.m; sourceTree = "<group>"; };
+		7862AEA416DDF8600000E056 /* SyncDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SyncDataViewController.h; path = Classes/views/SyncDataViewController.h; sourceTree = "<group>"; };
 		78787EAA16DDA60F00507448 /* Choose for Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Choose for Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78787EAE16DDA60F00507448 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		78787EB016DDA60F00507448 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -170,6 +173,8 @@
 		78787EE416DDA6A600507448 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				7862AEA416DDF8600000E056 /* SyncDataViewController.h */,
+				7862AEA116DDF83D0000E056 /* SyncDataViewController.m */,
 				7862AE8D16DDDAD90000E056 /* ListChoicesViewController.h */,
 				7862AE8E16DDDADA0000E056 /* ListChoicesViewController.m */,
 				7862AE8A16DDDAB20000E056 /* AddChoiceViewController.h */,
@@ -276,6 +281,7 @@
 				7862AE8C16DDDAB20000E056 /* AddChoiceViewController.m in Sources */,
 				7862AE8F16DDDADA0000E056 /* ListChoicesViewController.m in Sources */,
 				7862AE9216DDE7660000E056 /* HistoryManager.m in Sources */,
+				7862AEA216DDF83E0000E056 /* SyncDataViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
